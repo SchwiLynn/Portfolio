@@ -1,16 +1,43 @@
-# React + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🛠️ Tech Stack
 
-Currently, two official plugins are available:
+- **Framework:** React 18
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS 3
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📁 Project Structure
 
-## React Compiler
+```
+portfolio/
+├── public/                    # Static assets
+│   ├── projects/             # Project screenshots
+│   ├── profile.jpg           # Profile photo
+│   └── resume.pdf            # Resume
+│
+├── src/
+│   ├── components/
+│   │   ├── layout/           # Navigation, Footer
+│   │   ├── sections/         # Page sections (Hero, About, Skills, Projects, Contact)
+│   │   └── ui/               # Reusable components
+│   │
+│   ├── config/
+│   │   └── theme.js          # Colors and animation configurations
+│   │
+│   ├── data/
+│   │   └── portfolio.js      # All content (personal info, projects, skills)
+│   │
+│   ├── hooks/                # Custom React hooks
+│   ├── utils/                # Utility functions
+│   │
+│   ├── App.jsx               # Main app component
+│   ├── main.jsx              # Entry point
+│   └── index.css             # Global styles
+│
+├── tailwind.config.js        # Tailwind configuration
+├── vite.config.js            # Vite configuration
+└── package.json
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
